@@ -51,7 +51,12 @@ public static void main(String args[])
 		{
 			System.out.println("enter your number");
 			p1=sc.nextInt();
-			p2=(int)(6*(Math.random()));
+			if(p1>6)
+			{
+				System.out.println("enter correct number");
+				continue;
+			}
+			p2=(int)(6*(Math.random()))+1;
 			System.out.println("Computer chooses : " + p2);
 			if(p1==p2)
 			{
@@ -66,7 +71,12 @@ public static void main(String args[])
 		{
 			System.out.println("enter your number");
 			p1=sc.nextInt();
-			p2=(int)(6*Math.random());
+			p2=(int)(6*Math.random())+1;
+			if(p1>6)
+			{
+				System.out.println("enter correct number");
+				continue;
+			}
 			System.out.println("Computer chooses : " + p2);
 			if(p1==p2)
 			{
